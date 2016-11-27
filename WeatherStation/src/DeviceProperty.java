@@ -14,8 +14,11 @@ public class DeviceProperty {
 	public DeviceProperty(){
 		BufferedInputStream stream;
 		try {
+			//Mac
+			stream = new BufferedInputStream(new FileInputStream("/Users/Jonas/git/WeatherServer/WeatherStation/src/device.property"));
+			//Linux
 			//stream = new BufferedInputStream(new FileInputStream("/home/jonas/workspace/WeatherService/src/device.property"));
-			stream = new BufferedInputStream(new FileInputStream("device.property"));
+			//stream = new BufferedInputStream(new FileInputStream("device.property"));
 			log.log(Level.INFO,"call properties.load(stream)");
 			properties.load(stream);
 			stream.close();

@@ -14,8 +14,11 @@ public class DBConnectionProperty {
 	public DBConnectionProperty(){
 		BufferedInputStream stream;
 		try {
+			//Mac
+			stream = new BufferedInputStream(new FileInputStream("/Users/Jonas/git/WeatherServer/WeatherStation/src/database.property"));
+			//Linux
 			//stream = new BufferedInputStream(new FileInputStream("/home/jonas/workspace/WeatherService/src/database.property"));
-			stream = new BufferedInputStream(new FileInputStream("database.property"));
+			//stream = new BufferedInputStream(new FileInputStream("database.property"));
 			log.log(Level.INFO,"call properties.load(stream)");
 			properties.load(stream);
 			stream.close();

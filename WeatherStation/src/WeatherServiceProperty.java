@@ -11,8 +11,12 @@ public class WeatherServiceProperty {
 	public WeatherServiceProperty(){
 		BufferedInputStream stream;
 		try {
+			//Mac
+			stream = new BufferedInputStream(new FileInputStream("/Users/Jonas/git/WeatherServer/WeatherStation/src/service.property"));
+			//Linux
 			//stream = new BufferedInputStream(new FileInputStream("/home/jonas/workspace/WeatherService/src/service.property"));
-			stream = new BufferedInputStream(new FileInputStream("service.property"));
+			//Prod
+			//stream = new BufferedInputStream(new FileInputStream("service.property"));
 						properties.load(stream);
 			stream.close();
 		} catch (FileNotFoundException e) {

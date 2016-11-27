@@ -17,8 +17,8 @@ public class Device {
 	static double temperature;
 	static double humidity;
 	//private String Device_return = "Temp=23.9*  Humidity=37.3%";
-	//private String Device_return = "Temp=3.9*  Humidity=7.3%";
-	private String device_return;
+	private String device_return = "Temp=3.9*  Humidity=7.3%";
+	//private String device_return;
 	
 	public Device(String sys){
 		this.sys = sys;
