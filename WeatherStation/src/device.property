@@ -1,0 +1,5 @@
+dev.Source		/home/jonas/
+dev.CommandSrc	/home/weatherdev/Development/Python/Adafruit_Python_DHT/examples
+dev.CommandScpt	AdafruitDHT.py
+dev.Device		2302
+dev.GPIO		4

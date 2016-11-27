@@ -1,0 +1,4 @@
+Cycletime	30000
+System		dev
+Location	rem
+LogFileDest	../log/
